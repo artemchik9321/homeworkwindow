@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ukraine</title>
+</head>
+<body>
+    <script>
+        let username = prompt("введите имя пж:");
+        let pol = prompt("введите пол пж:");
+        let age = prompt("введите возраст пж:");
+        let email = prompt("введите емеил пж:");
+
+        let info = "\n полное имя: " + username + "\n пол: " + pol + "\n возраст: " + age + "\n емеил: " + email;
+        let confirmation = confirm("информация:\n" + info + "\n ти написал правильно все?");
+
+        if (confirmation) 
+        {
+            alert("спасибо");
+        } 
+        else 
+        {
+            username = prompt("полное имя:");
+            pol = prompt("введите пол пж:");
+            age = prompt("введите возраст пж:");
+            email = prompt("введите емеил пж:");
+
+            info = "\n полное имя: " + username + "\n пол: " + pol + "\n возраст: " + age + "\n емеил: " + email;
+            confirmation = confirm("информация:\n" + info + "\n ти написал правильно все?");
+
+            if (confirmation) 
+            {
+                alert("спасибо");
+            } 
+            else 
+            {
+                alert("информация неправильна плаке плаке");
+            }
+        }
+    </script>
+</body>
+</html>
